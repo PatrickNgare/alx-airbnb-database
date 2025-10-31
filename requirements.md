@@ -26,7 +26,7 @@ Create an **Entity-Relationship (ER) diagram** based on the provided database sp
 
 3. **Visualize the ER Diagram**
    Use a tool such as:
-   - [Draw.io](https://app.diagrams.net)  
+   - Draw.io (https://app.diagrams.net)  
    - Lucidchart  
    - Mermaid.js  
    - dbdiagram.io  
