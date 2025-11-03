@@ -47,7 +47,7 @@ To design the Entity Relationship Diagram (ERD) for the Airbnb database system.
 ## Relationships
 - A **User** can make many **Bookings**
 - A **Property** can have many **Bookings**
-- Each **Booking** has one **Payment**
+- Each **Booking** has one **Payments**
 - A **User** can write many **Reviews**
 - A **Property** can have many **Reviews**
 
