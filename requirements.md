@@ -52,3 +52,5 @@ To design the Entity Relationship Diagram (ERD) for the Airbnb database system.
 - A **Property** can have many **Reviews**
 
 ---
+
+<!-- CI trigger: Mon, Nov  3, 2025  5:53:40 PM -->
