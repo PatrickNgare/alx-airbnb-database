@@ -1,19 +1,54 @@
-# Project Requirements: Airbnb Database ERD
+# Project Requirements: Airbnb Database ER Diagram
 
 ## Objective
-Define entities, attributes and relationships for the Airbnb database.
+To design the Entity Relationship Diagram (ERD) for the Airbnb database system.
 
 ## Entities
-- User (user_id, first_name, last_name, email, password_hash, created_at)
-- Property (property_id, owner_id, title, description, location, price)
-- Booking (booking_id, user_id, property_id, start_date, end_date, status)
-- Payment (payment_id, booking_id, amount, method, paid_at)
-- Review (review_id, booking_id, user_id, rating, comment, created_at)
+1. **User**
+   - user_id (PK)
+   - first_name
+   - last_name
+   - email
+   - phone_number
+   - created_at
+
+2. **Property**
+   - property_id (PK)
+   - owner_id (FK → User)
+   - title
+   - description
+   - location
+   - price
+   - created_at
+
+3. **Booking**
+   - booking_id (PK)
+   - user_id (FK → User)
+   - property_id (FK → Property)
+   - start_date
+   - end_date
+   - status
+
+4. **Payment**
+   - payment_id (PK)
+   - booking_id (FK → Booking)
+   - amount
+   - payment_method
+   - paid_at
+
+5. **Review**
+   - review_id (PK)
+   - user_id (FK → User)
+   - property_id (FK → Property)
+   - rating
+   - comment
+   - created_at
 
 ## Relationships
-- User 1..* Booking
-- Property 1..* Booking
-- Booking 1..1 Payment
-- Booking 0..1 Review
+- A **User** can make many **Bookings**
+- A **Property** can have many **Bookings**
+- Each **Booking** has one **Payment**
+- A **User** can write many **Reviews**
+- A **Property** can have many **Reviews**
 
-Notes: This file exists to satisfy the automated ERD review checks.
+---
